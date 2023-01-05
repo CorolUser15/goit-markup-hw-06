@@ -733,10 +733,10 @@ body{
     text-align: center;
 
 }
-.registration-form-field{
-    position: relative;
-    display: block;
 
+.registration-form-field{
+    display: block;
+    position: relative;
     margin-bottom: 8px;
 }
 .registration-form-label{
@@ -751,6 +751,7 @@ body{
 
 }
 .registration-form-input{
+    display: block;
     width: 100%;
     height: 40px;
     padding-left: 38px;
@@ -776,14 +777,17 @@ body{
 .registration-form-input:focus + .registration-form-icon{
     fill: var(--logo);
 }
+
 .registration-form-icon{
     position: absolute;
-    bottom: 7px;
+    top: 65%;
     left: 16px;
 
+    transform: translateY(-50%);
     transition: fill var(--duration-timing);
-}
 
+    display: inline-block;
+}
 .registration-form-message{
     width: 100%;
     height: 120px;
@@ -811,6 +815,8 @@ body{
 .registration-form-agreement{
     position: relative;
     text-align: center;
+    display: flex;
+    align-items: center;
 
 }
 .registration-form-text{
@@ -833,6 +839,8 @@ body{
     height: 16px;
     border: 1.25px solid var(--primary-text-color);
     border-radius: 2px;
+
+    margin-right: 8px;
    
     transition: background-color var(--duration-timing),color var(--duration-timing),border var(--duration-timing);
 }
